@@ -14,6 +14,7 @@ URL:		http://kmatrix3d.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	glut-devel
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	libtool
 BuildRequires:	rpmbuild(macros) >= 1.229
