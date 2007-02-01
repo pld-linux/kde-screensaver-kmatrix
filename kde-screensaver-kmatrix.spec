@@ -65,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{vendor_name}.kss
 %{_datadir}/apps/%{vendor_name}
 %{_datadir}/apps/kscreensaver/%{vendor_name}.desktop
-%{_docdir}/kde/HTML/en/kmatrix3d/*
+%{_kdedocdir}/en/kmatrix3d/*
