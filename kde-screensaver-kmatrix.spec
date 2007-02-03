@@ -13,8 +13,6 @@ Patch0:		kde-am.patch
 URL:		http://kmatrix3d.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	boost-filesystem-devel
-BuildRequires:	boost-regex-devel
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	libtool
 BuildRequires:	OpenGL-devel
