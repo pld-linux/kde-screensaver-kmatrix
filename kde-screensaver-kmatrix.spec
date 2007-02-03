@@ -11,12 +11,14 @@ Source0:	http://dl.sourceforge.net/kmatrix3d/kmatrix3d-%{version}.tar.bz2
 # Source0-md5:	18bfaecbdbb521a8a840e8bd80a70729
 Patch0:		kde-am.patch
 URL:		http://kmatrix3d.sourceforge.net/
-BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	OpenGL-glut-devel
+BuildRequires:	boost-filesystem-devel
+BuildRequires:	boost-regex-devel
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	libtool
+BuildRequires:	OpenGL-devel
+BuildRequires:	OpenGL-glut-devel
 BuildRequires:	rpmbuild(macros) >= 1.229
 Requires:	kdebase-screensavers
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
