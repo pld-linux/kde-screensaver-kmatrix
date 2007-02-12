@@ -1,6 +1,6 @@
 Summary:	KMatrix3D - OpenGL screensaver for KDE
-Summary(de):	KMatrix3D - ein KDE Bildschirmschoner
-Summary(pl):	KMatrix3D - wygaszacz ekranu oparty na OpenGL dla KDE
+Summary(de.UTF-8):   KMatrix3D - ein KDE Bildschirmschoner
+Summary(pl.UTF-8):   KMatrix3D - wygaszacz ekranu oparty na OpenGL dla KDE
 %define		vendor_name	kmatrix3d
 Name:		kde-screensaver-%{vendor_name}
 Version:	0.1
@@ -24,10 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KMatrix3D is an OpenGL screensaver for KDE.
 
-%description -l de
+%description -l de.UTF-8
 KMatrix3D ist ein OpenGL KDE Bildschirmschoner.
 
-%description -l pl
+%description -l pl.UTF-8
 KMatrix3D to oparty na OpenGL wygaszacz ekranu dla KDE.
 
 %prep
