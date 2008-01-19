@@ -11,12 +11,12 @@ Source0:	http://dl.sourceforge.net/kmatrix3d/kmatrix3d-%{version}.tar.bz2
 # Source0-md5:	18bfaecbdbb521a8a840e8bd80a70729
 Patch0:		kde-am.patch
 URL:		http://kmatrix3d.sourceforge.net/
+BuildRequires:	OpenGL-devel
+BuildRequires:	OpenGL-glut-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	libtool
-BuildRequires:	OpenGL-devel
-BuildRequires:	OpenGL-glut-devel
 BuildRequires:	rpmbuild(macros) >= 1.229
 Requires:	kdebase-screensavers
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -57,13 +57,14 @@ install -d $RPM_BUILD_ROOT%{_datadir}/apps/kscreensaver
 	kde_libs_htmldir=%{_kdedocdir} \
 	desktopdir=%{_datadir}/apps/kscreensaver
 
+%find_lang kmatrix3d --with-kde
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f kmatrix3d.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/%{vendor_name}.kss
 %{_datadir}/apps/%{vendor_name}
 %{_datadir}/apps/kscreensaver/%{vendor_name}.desktop
-%{_kdedocdir}/en/kmatrix3d
