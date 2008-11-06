@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	KMatrix3D - wygaszacz ekranu oparty na OpenGL dla KDE
 %define		vendor_name	kmatrix3d
 Name:		kde-screensaver-%{vendor_name}
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://dl.sourceforge.net/kmatrix3d/kmatrix3d-%{version}.tar.bz2
